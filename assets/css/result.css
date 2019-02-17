@@ -1,0 +1,15 @@
+body {
+	font-size: 36px;
+	background-color: black;
+	text-align: center;
+	width: 100vw;
+	height: 100vh;
+	position: static;
+	background-image: url("../img/file.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
