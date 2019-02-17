@@ -8,9 +8,9 @@ Terminal commands to run:
 
 After running these commands:
 
-Open index.html in web browser (while FLASK_APP=routes.py flask run is still running)
-Type in an ingredient you would like to find recipes for
-Get recommended recipes
+1. Open index.html in web browser (while FLASK_APP=routes.py flask run is still running)
+2. Type in an ingredient you would like to find recipes for
+3. Get recommended recipes
 
 ## Dependencies:
 pip install flask
