@@ -10,9 +10,9 @@ After running these commands:
 
 Open index.html in web browser (while FLASK_APP=routes.py flask run is still running)
 Type in an ingredient you would like to find recipes for
+Get recommended recipes
 
-Dependencies:
-
+##Dependencies:
 pip install flask
 
 pip install flask flask-cors
