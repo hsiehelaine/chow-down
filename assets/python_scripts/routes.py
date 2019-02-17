@@ -1,8 +1,8 @@
 from flask import request
 from flask import Flask, jsonify
 from flask_cors import CORS, cross_origin
-import json
 import pandas as pd
+import json
 import re
 
 app = Flask(__name__)
@@ -47,11 +47,12 @@ def foodQuery(df, name):
 				sodium = df.at[i, 'sodium']
 				query_results.append([q_name, rating, cal, protein, fat, sodium])
 	query_results = sorted(query_results, key=lambda x: x[1], reverse=True)
-	q_results = []
+	q_results = {}
 	for i in range(0, 10):
 		if(query_results == None or len(query_results) <= i):
 			break
-		q_results.append(query_results[i])
+		value = str(query_results[i][1:])
+		q_results[query_results[i][0]] = value#query_results[i][1:]
 	q_results = json.dumps(q_results)
 	return q_results
 
