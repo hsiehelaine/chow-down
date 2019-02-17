@@ -41,9 +41,7 @@ $(document).ready(function() {
 
     var query_param = getUrlVars()["serialNumber"];
     var query_param2 = getUrlVars()["selection"];
-
-	
-	$.ajax({
+    $.ajax({
     	type:'post',
 	  	url: "http://localhost:5000/queryresult",
 	  	data: JSON.stringify({srl: query_param, srt: query_param2}),
@@ -55,8 +53,8 @@ $(document).ready(function() {
 	    	var right="";
 	    	keylist = [];
 	    	
-            for (var key in json_obj) 
-            {
+          for (var key in json_obj) 
+          {
              	keylist.push(key);
              	var entry = JSON.parse(json_obj[key]);
 
@@ -69,16 +67,18 @@ $(document).ready(function() {
                 right += "<div> Fat: " + convertNull(entry[3]) + "</div>";
                 right += "<div> Sodium: " + convertNull(entry[4]) + "</div>";
             	right += "</div>";
-            }
-			left+="</ol>";
+          }
+   	  left+="</ol>";
 
-	    	$("#responseTextAreaLeft").html(left);
-	    	$("#responseTextAreaRight").html(right);
+	  $("#responseTextAreaLeft").html(left);
+	  $("#responseTextAreaRight").html(right);
 
-		},
-		error: function(request, status, error) {
-			console.log("error ** + " + error);
-		}
+	  },
+	  error: function(request, status, error) {
+		console.log("error ** + " + error);
+	  }
+
+	
 	});
 });
 
