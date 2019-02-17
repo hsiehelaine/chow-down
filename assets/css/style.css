@@ -13,3 +13,44 @@ body {
 	background-repeat: no-repeat;
 	overflow: hidden;
 }
+
+#title {
+	position: absolute;
+	top: 22%;
+	height: 200px;
+	width: 100%;
+	font-family: 'Satisfy', cursive;
+	/*font-family: 'Open Sans Condensed',  sans-serif;*/
+	font-weight: 100;
+	font-style: italic;
+	color: mediumseagreen;
+	z-index: 2;
+}
+
+#titlebg {
+	position: absolute;
+	top: 26%;
+	height: 350px;
+	width: 100%;
+	background-color: white;
+	text-align: center;
+	opacity: 0.6;
+	z-index: 1.5;
+}
+
+#searchbar {
+	position: absolute;
+	top: 60%;
+	height: 100px;
+	width: 100%;
+	z-index: 2;
+}
+
+#t:visited {
+	text-decoration: none;
+	color: mediumseagreen;
+}
+
+a {
+	text-decoration: none;
+}
