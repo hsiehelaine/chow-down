@@ -29,8 +29,9 @@ def query_result():
 #query method
 def foodQuery(df, name):
 	query_results = []
-	regex = re.compile('[^a-z0-9]')
+	regex = re.compile('[^a-zA-Z0-9]')
 	name = regex.sub('', name)
+	name = name.lower()
 	df.columns = [regex.sub('', c) for c in df.columns]
 	if name not in df.columns:
 		return "oops! no recipes found with the selected ingredient"
