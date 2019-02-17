@@ -59,6 +59,18 @@ body {
 	z-index: 2;
 }
 
+#footer {
+	position: absolute;
+	top: 90%;
+	height: 5px;
+	font-family: 'Josefin Slab', serif;
+	font-weight: 20;
+	font-size: 25px;
+	color: mediumseagreen;
+	width: 100%;
+	z-index: 2;
+}
+
 #t:visited {
 	text-decoration: none;
 	color: mediumseagreen;

@@ -109,3 +109,17 @@ a:visited {
 .pointer {
 	cursor: pointer;
 }
+
+#footer {
+	position: absolute;
+	top: 90%;
+	height: 5px;
+	font-family: 'Josefin Slab', serif;
+	font-weight: 20;
+	font-size: 25px;
+	color: mediumseagreen;
+	width: 100%;
+	z-index: 2;
+}
+
+
