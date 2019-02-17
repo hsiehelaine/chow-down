@@ -4,7 +4,7 @@
         <title>Chow Down</title>
         <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
         <script language="javascript" type="text/javascript">
         function removeSpaces(string) {
@@ -19,20 +19,19 @@
         <div id="title">
             <a href="index.html" id="t"><h1>Welcome!</h1></a>
         </div>
-	<div id="description">
-	   <h3>Not sure what to make for your next meal? Enter an ingredient below!</h3>
-	</div>
+        <div id="description">
+           <h3>Not sure what to make for your next meal? Enter an ingredient below!</h3>
+        </div>
         <form action="result.html" accept-charset="utf-8" method="GET" id="searchbar">
-	    <select name="sorted by">
-		<option value="rating">Rating (High to Low)</option>
-		<option value="calories">Calories (Low to High)</option>
-		<option value="protein">Protein (High to Low)</option>
-		<option value="fat">Fat (Low to High)</option>
-		<option value="sodium">Sodium (Low to High)</option>
-	    </select>
+            <select type="text" name="selection">
+                <option value="rating">Rating (High to Low)</option>
+                <option value="calories">Calories (Low to High)</option>
+                <option value="protein">Protein (High to Low)</option>
+                <option value="fat">Fat (Low to High)</option>
+                <option value="sodium">Sodium (Low to High)</option>
+            </select>
             <input type="text" name="serialNumber" placeholder="Enter item here..." onblur="this.value=removeSpaces(this.value);">
             <input type="submit" value="Submit">
         </form>
     </body>
 </html>
-
