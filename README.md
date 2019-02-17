@@ -14,5 +14,7 @@ Type in an ingredient you would like to find recipes for
 Dependencies:
 
 pip install flask
+
 pip install flask flask-cors
+
 pip install pandas
